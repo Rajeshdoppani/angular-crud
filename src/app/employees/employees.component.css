@@ -1,0 +1,24 @@
+.mat-table {
+    width: 105%;
+}
+.mat-header-cell {
+    color: #fff;
+    background: #343a40c4;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.mat-column-sno {
+    flex: 1px 0 60px;
+}
+.mat-column-actions {
+    flex: 0 0 200px;
+}
+
+.example-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    padding-left: 109px;
+}

@@ -1,0 +1,30 @@
+<div class="main-content">
+    <div class="conttainer-fluid">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Welcome To Login Page</h4>
+            </div>
+            <div class="card-body">
+                <form class="example-form" [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="example-container">
+                        <mat-form-field name="email">
+                            <input matInput placeholder="Enter your email" formControlName="email" required>
+                            <mat-error
+                                *ngIf="!loginForm.controls['email'].valid && loginForm.controls['email'].touched">Enter
+                                valid email or mobile number</mat-error>
+                        </mat-form-field>
+                        <mat-form-field name="password">
+                            <input matInput placeholder="Enter your password" type="password" formControlName="password"
+                                required>
+                            <mat-error
+                                *ngIf="!loginForm.controls['password'].valid && loginForm.controls['password'].touched">
+                                Enter your password</mat-error>
+                        </mat-form-field>
+                        <button type="submit" class="login-btn" mat-raised-button color="primary" title="Login"
+                            [disabled]="!loginForm.valid">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

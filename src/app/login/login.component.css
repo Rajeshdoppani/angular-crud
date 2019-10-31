@@ -1,0 +1,19 @@
+.card {
+    width: 40%;
+    margin: 3em auto;
+}
+.card-title, .card-category {
+    text-align: center;
+}
+.login-btn {
+    float: right;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
